@@ -1,0 +1,76 @@
+:root{
+    --fundo:#e9f3fb;
+    --branco:#ffffff;
+    --azul:#d4e6ed;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--fundo);
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    height: 100%;
+}
+
+/* configuração página */
+header {
+    display: flex;
+    flex-direction: column; /* Alterado para coluna */
+    align-items:center;
+    background-color: var(--branco);
+    padding: 10px 0;
+    border-bottom: var(--azul) solid 5px;
+}
+
+.container-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Alterado para coluna */
+    align-items: center;
+}
+
+.container-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centralizar verticalmente */
+    flex-wrap: wrap; /* Quebrar para próxima linha se necessário */
+    justify-content: center; /* Centralizar horizontalmente */
+    margin-bottom: 0px; /* Espaço entre logotipo e botão */
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.logo { 
+    height: 100px;
+}
+
+/* FINAL CABEÇALHO */
+
+@media (min-width: 670px) {
+
+    .container-menu {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+     .container-logo {
+        margin-bottom: 20px; /* Resetar o espaço entre logotipo e botão */
+    }
+}
+
+footer{
+    height: 100px;
+    display:block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: cornflowerblue;
+    border-top: #b37d20 solid 5px;
+    
+}
